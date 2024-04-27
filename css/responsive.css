@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+    .inner_container .game_box_head, .play_buttons_main
+    {
+        width: 90%;
+        padding: 20px 40px;
+
+        font-family: var(--themeFont);
+    }
+}
+
+@media screen and (max-width: 629px){
+    .game_box_head .game_head
+    {
+        font: 800 22px var(--themeFont);
+    }
+}
+
+@media screen and (max-width: 420px){
+    .inner_container .game_box_head, .play_buttons_main
+    {
+        width: 90%;
+        padding: 20px;
+
+        font-family: var(--themeFont);
+    }
+
+
+
+
+    .inner_container .display-bg-contain{
+        flex-direction: column;
+        gap: 2px;
+
+        /* transform: rotate(-20deg); */
+    
+        z-index: -1;
+    }
+
+
+
+
+
+
+
+    .play_btns .start_btn
+    {
+        width: 140px;
+        font: 700 14px var(--themeFont);
+    }
+    .select_btns
+    {
+        gap: 0 10px;
+        
+        margin-top: 20px;
+    }
+    .select_btns button
+    {
+        width: 80px;
+    }
+    .select_btns button img
+    {
+        width: 100%;
+        box-shadow: 0 0 32px 5px rgb(35, 35, 35);
+    }
+
+
+
+    .nextRound
+    {
+        width: 90%;
+        height: auto;
+    }
+
+    .roundBox_show
+    {
+        transform: translate(-50%, -50%) scale(1.0);
+    }
+
+    .playBtn_cont_open
+    {
+        transform: scale(0.0);
+    }
+
+    .result_box .result_content
+    {
+        font: 600 16px var(--themeFont);
+    }
+
+    .rslt-inner-box{
+        font: 700 20px var(--themeFont);
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+}

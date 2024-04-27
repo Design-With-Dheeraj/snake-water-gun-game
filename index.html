@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake, Water and Gun Game</title>
+	
+	<!-- Style Sheet Link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+</head>
+<body>
+
+
+	<div class="main_container">
+		<div class="loader-overlay-contain">
+			<div class="top-shp"></div>
+			<div class="mid-line"></div>
+			<div class="bot-shp"></div>
+		</div>
+		<div class="inner_container">
+			<div class="display-bg-contain">
+				<audio src="sound/snake.mp3" id="snakeAudio"></audio>
+				<audio src="sound/water.mp3" id="waterAudio"></audio>
+				<audio src="sound/gun.mp3" id="gunAudio"></audio>
+				<div class="bg-box snake-bg snake-mob-bg">
+					<img src="img/snake-bg.png" alt="">
+				</div>
+				<div class="bg-box water-bg">
+					<img src="img/water-bg.png" alt="">
+				</div>
+				<div class="bg-box gun-bg">
+					<img src="img/gun-bg.png" alt="">
+				</div>
+			</div>
+			
+			<!-- <div class="round_counter">Round - <span id="roundNumber">1</span></div> -->
+			<div class="game_box_head">
+				<div class="game_head">snake, water and gun</div>
+			</div>
+
+			<div class="play_buttons_main" id="play_buttons_main">
+				<div class="play_btns">
+					<audio src="sound/effect1.wav" id="audio"></audio>
+					<button class="start_btn" id="start_btn" >start</button>
+				</div>
+				<div class="select_btns">
+					<button id="snakeBtn" class="playIcons"><img src="img/snake_icon.webp"></button>
+					<button id="waterBtn" class="playIcons"><img src="img/water_icon.webp"></button>
+					<button id="gunBtn" class="playIcons"><img src="img/gun_icon.webp"></button>
+				</div>
+			</div>
+
+			<div class="nextRound" id="nextRound">
+				<div class="result_box">
+					<div class="resultBox_info">result</div>
+					<div class="rslt-inner-box" id="rsltShow_bx"></div>
+					<p id="resultBox" class="result_content"></p>
+				</div>
+				<audio src="sound/win.mp3" id="winAudio"></audio>
+				<audio src="sound/lose.wav" id="loseAudio"></audio>
+				<!-- <div class="winning_container">
+					<h4>Winning Board</h4>
+					<div class="winning_Box_main">	
+						<div class="player_area winning_Box" id="playerScore">0</div>
+						<div class="tie_area winning_Box" id="tieScore">0</div>
+						<div class="bot_area winning_Box" id="botScore">0</div>
+					</div>
+				</div> -->
+				<p class="next-round-head">next round start in</p>
+				<span class="next-round-counter" id="next_Round">10</span> 
+			</div>
+
+		</div>
+	</div>
+
+	<!-- JavaScript Link -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js" integrity="sha512-IxxYrSNXnt/RJlxNX40+7BQL88FLqvdpVpuV9AuvpNH/NFP0L8xA8WLxWTXx6PYExB5R/ktQisp6tIrnLn8xvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
